@@ -98,7 +98,6 @@ table b{
     margin: auto;
     display: flex;
     flex-direction: column;
-    border-radius: 1.5rem;
     background-color: var(--white-color3);
 }
 
@@ -109,9 +108,24 @@ table b{
     background-color: var(--lighted-color2);
 }
 
+.attribution {
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color8);
+    font-size: 16px;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 @media (min-width: 700px) {
     .container_card {
         margin: 5rem auto;
+        border-radius: 1.5rem;
     }
     img {
         width: calc(100% - 3rem);
