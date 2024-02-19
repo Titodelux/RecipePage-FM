@@ -22,11 +22,14 @@
     font-family: Outfit, Arial, Helvetica, sans-serif;
 }
 
-/* No sé si deba eliminar lo predeterminado... */ 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-color5);
 }
 
 main {
@@ -35,6 +38,11 @@ main {
 
 img{
     width: 100%;
+}
+
+hr {
+    margin: 2rem 0;
+    border-top: 1px solid var(--light-color6);
 }
 
 h1, h2 {
@@ -57,30 +65,12 @@ h3 {
     color: var(--primary-color2);
 }
 
-table b{
-    color: var(--primary-color1);
+li {
+    margin: 1rem 1.5rem;
 }
-
-
-.time_tab {
-    margin: 2rem 0;
-    padding: 1.2rem 1rem;
-    border-radius: 0.7rem;
-    background-color: var(--lighted-color2);
-}
-
 li p {
     margin: 0 0.7rem;
     display: block;
-}
-
-hr {
-    margin: 2rem 0;
-    border-top: 1px solid var(--light-color6);
-}
-li {
-    margin: 1rem 1.5rem;
-    list-style-position: outside;
 }
 li::marker{
     color: var(--primary-color1);
@@ -98,4 +88,34 @@ table td{
 }
 table tr{
     border-bottom: 1px solid var(--light-color6);
+}
+table b{
+    color: var(--primary-color1);
+}
+
+.container_card {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    background-color: var(--white-color3);
+}
+
+.time_tab {
+    margin: 2rem 0;
+    padding: 1.2rem 1rem;
+    border-radius: 0.7rem;
+    background-color: var(--lighted-color2);
+}
+
+@media (min-width: 700px) {
+    .container_card {
+        margin: 5rem auto;
+    }
+    img {
+        width: calc(100% - 3rem);
+        margin: 1.5rem 1.5rem 0rem;
+        border-radius: 1rem;
+    }
 }
